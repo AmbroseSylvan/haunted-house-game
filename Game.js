@@ -1,4 +1,3 @@
-
 //Associative array of game states.
 const GameState = Object.freeze({
     WELCOME: Symbol("welcoming"),
@@ -79,8 +78,6 @@ export default class Game{
                     //If input is "knock" then change state to MANSION and return doorknocker message.
                     sReply ="The heavy oak door creaks open from the force of the iron knocker. The musty odor of mold pours out with a dull roar, as if the house were groaning with ancient pain. You are spooked. Do you WAIT by the road, or ENTER?";
                     this.stateCur = GameState.DOOR;
-                }else{
-                    sReply = "I don't understand.";
                 }
                 break;
             //Second scene: Mansion door.

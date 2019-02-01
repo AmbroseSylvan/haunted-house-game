@@ -412,7 +412,7 @@ export default class Game{
                 sReply = "It is a dark and rainy night. Bang! You have a flat tire. Too bad you don't have a spare. Do you WAIT or KNOCK at the spooky mansion for help?";
                 this.conked = false;
                 this.dizzy = false;
-                this.stateCur = GameState.FLAT;
+                this.stateCur = GameState.WELCOME;
                 break;           
         }
         return([sReply]);
